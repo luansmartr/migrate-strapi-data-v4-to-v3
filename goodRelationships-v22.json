@@ -1,0 +1,748 @@
+{
+        "class-learning-objectives": [
+        "behaviors",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "activities": [
+        "banner",
+        "organizers",
+        "partnerships",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-comments": [
+        "sender",
+        "created_by",
+        "updated_by"
+    ],
+    "organizations": [
+        "cover",
+        "expertises",
+        "main_photo",
+        "medias",
+        "trainer_profiles",
+        "learner_profiles",
+        "courses",
+        "conversations",
+        "resources",
+        "classes",
+        "organization_members",
+        "training_programs",
+        "billing",
+        "wish_list_courses",
+        "purchase_courses",
+        "teams",
+        "competencies",
+        "organization_competencies",
+        "organization_positions",
+        "surveys",
+        "organization_kpis",
+        "subscriptions",
+        "organization_units",
+        "targets",
+        "org_unit_targets",
+        "target_edit_histories",
+        "forms",
+        "form_results",
+        "reports",
+        "dynamic_reports",
+        "request_for_changes",
+        "created_by",
+        "updated_by"
+    ],
+    "target-item-histories": [
+        "target_item",
+        "member_updated",
+        "created_by",
+        "updated_by"
+    ],
+    "form-questions": [
+        "internal_quiz_answers",
+        "internal_quiz_question_options",
+        "option_answer_key",
+        "internal_quiz",
+        "created_by",
+        "updated_by"
+    ],
+    "forms": [
+        "organization",
+        "internal_quiz_questions",
+        "internal_quiz_results",
+        "material",
+        "created_by",
+        "updated_by"
+    ],
+    "target-edit-histories": [
+        "organization",
+        "org_unit_target",
+        "target_unit",
+        "member_input",
+        "edit_by",
+        "created_by",
+        "updated_by"
+    ],
+    "formats": [
+        "image",
+        "classes",
+        "courses",
+        "assessments",
+        "created_by",
+        "updated_by"
+    ],
+    "tracking-materials": [
+        "learner_profile",
+        "material",
+        "created_by",
+        "updated_by"
+    ],
+    "survey-details": [
+        "auditee",
+        "organization_competencies",
+        "survey",
+        "survey_result_by_user",
+        "auditor",
+        "created_by",
+        "updated_by"
+    ],
+    "shared-profiles": [
+        "created_by",
+        "updated_by"
+    ],
+    "partner-feedbacks": [
+        "partner",
+        "created_by",
+        "updated_by"
+    ],
+    "transactions": [
+        "order",
+        "create_by",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "field-changes": [
+        "request_for_change",
+        "created_by",
+        "updated_by"
+    ],
+    "email-notifications": [
+        "partner",
+        "email_configs",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-position-competencies": [
+        "organization_position",
+        "organization_competency",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-position-categories": [
+        "organization_positions",
+        "created_by",
+        "updated_by"
+    ],
+    "request-for-changes": [
+        "creator",
+        "organization",
+        "survey",
+        "field_changes",
+        "request_to",
+        "created_by",
+        "updated_by"
+    ],
+    "target-relationships": [
+        "created_by",
+        "updated_by"
+    ],
+    "feedbacks": [
+        "user",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "target-items": [
+        "input_by",
+        "target",
+        "approved_by",
+        "target_item_histories",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-relationships": [
+        "organization",
+        "parent",
+        "child",
+        "created_by",
+        "updated_by"
+    ],
+    "workforce-planning-kpis": [
+        "training_programs",
+        "created_by",
+        "updated_by"
+    ],
+    "classes": [
+        "trainer_profiles",
+        "learner_profiles",
+        "class_type",
+        "assessments",
+        "bookings",
+        "conversations",
+        "reports",
+        "partner",
+        "course",
+        "rate_service",
+        "feedbacks",
+        "recurring_class",
+        "create_by_recurring_class",
+        "organization",
+        "training_programs",
+        "quiz_results",
+        "learner_checked_in",
+        "course_reports",
+        "exercises",
+        "passed_learners",
+        "organizers",
+        "image",
+        "certificate_template",
+        "class_learning_objectives",
+        "sessions",
+        "created_by",
+        "updated_by"
+    ],
+        "organization-members": [
+        "user",
+        "organization",
+        "teams_members",
+        "teams_leaders",
+        "organization_positions",
+        "organization_unit_members",
+        "targets",
+        "target_edit_histories",
+        "auditor_surveys",
+        "auditee_surveys",
+        "input_target_items",
+        "approved_target_items",
+        "input_targets",
+        "approved_targets",
+        "target_item_histories",
+        "form_results",
+        "feedback_form_results",
+        "form_answers",
+        "internal_quiz_result",
+        "internal_quiz_answer_feedbacks",
+        "created_surveys",
+        "created_programs",
+        "created_courses",
+        "created_course_reports",
+        "targets_assigned",
+        "auditee_survey_results",
+        "survey_result_by_users",
+        "auditee_survey_result_by_users",
+        "assigned_surveys",
+        "creator_of_requests",
+        "admin_of_requests",
+        "auditee_survey_details",
+        "auditor_survey_details",
+        "organization_class",
+        "created_organization_competencies",
+        "created_organization_positions",
+        "organization_primary_position",
+        "created_by",
+        "updated_by"
+    ],
+    "widget-data": [
+        "widget_config",
+        "created_by",
+        "updated_by"
+    ],
+    "internal-quiz-answer-options": [
+        "file_upload",
+        "internal_quiz_question_option",
+        "internal_quiz_answer",
+        "created_by",
+        "updated_by"
+    ],
+        "rate-services": [
+        "partner",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "partners": [
+        "cover",
+        "expertises",
+        "main_photo",
+        "medias",
+        "trainer_profiles",
+        "learner_profiles",
+        "courses",
+        "partner_members",
+        "conversations",
+        "resources",
+        "classes",
+        "rate_services",
+        "email_notification",
+        "partner_feedbacks",
+        "guided_question",
+        "billing",
+        "training_programs",
+        "created_by",
+        "updated_by"
+    ],
+    "admin-profiles": [
+        "user",
+        "created_by",
+        "updated_by"
+    ],
+    "target-units": [
+        "targets",
+        "target_edit_histories",
+        "created_by",
+        "updated_by"
+    ],
+    "email-queues": [
+        "created_by",
+        "updated_by"
+    ],
+    "organization-unit-members": [
+        "organization_member",
+        "organization_unit",
+        "created_by",
+        "updated_by"
+    ],
+    "learner-profiles": [
+        "partner",
+        "courses",
+        "avatar",
+        "user",
+        "classes",
+        "bookings",
+        "assessment_results",
+        "cover",
+        "organization",
+        "training_programs",
+        "classes_checked_in",
+        "exercises",
+        "internal_quiz_answers",
+        "internal_quiz_results",
+        "passed_classes",
+        "tracking_materials",
+        "created_by",
+        "updated_by"
+    ],
+        "internal-quiz-answer-feedbacks": [
+        "internal_quiz_answer",
+        "trainer_feedback_by",
+        "organization_member_feedback",
+        "created_by",
+        "updated_by"
+    ],
+    "certificate-templates": [
+        "classes",
+        "created_by",
+        "updated_by"
+    ],
+    "partner-members": [
+        "user",
+        "partner",
+        "created_by",
+        "updated_by"
+    ],
+    "sessions": [
+        "class",
+        "session_materials",
+        "created_by",
+        "updated_by"
+    ],
+    "assessments": [
+        "courses",
+        "format_type",
+        "classes",
+        "assessment_results",
+        "created_by",
+        "updated_by"
+    ],
+    "competency-groups": [
+        "competencies",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-units": [
+        "organization_unit_members",
+        "organization",
+        "organization_relationship_parents",
+        "organization_relationship_children",
+        "org_unit_targets",
+        "created_by",
+        "updated_by"
+    ],
+    "survey-results": [
+        "user",
+        "survey",
+        "survey_result_by_users",
+        "auditee_member",
+        "created_by",
+        "updated_by"
+    ],
+        "organization-kpis": [
+        "organization",
+        "training_programs",
+        "created_by",
+        "updated_by"
+    ],
+    "quiz-results": [
+        "material",
+        "user",
+        "materials",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "teams": [
+        "avatar",
+        "members",
+        "leaders",
+        "organization",
+        "surveys",
+        "organization_positions",
+        "auditor_surveys",
+        "auditee_surveys",
+        "created_by",
+        "updated_by"
+    ],
+    "reports": [
+        "files",
+        "class",
+        "courses",
+        "users",
+        "organization",
+        "created_by",
+        "updated_by"
+    ],
+    "chats": [
+        "sender",
+        "conversation",
+        "created_by",
+        "updated_by"
+    ],
+        "guided-questions": [
+        "partner",
+        "created_by",
+        "updated_by"
+    ],
+    "exercises": [
+        "files",
+        "learner",
+        "class",
+        "created_by",
+        "updated_by"
+    ],
+    "subscriptions": [
+        "transaction_subscriptions",
+        "organization",
+        "created_by",
+        "updated_by"
+    ],
+    "competencies": [
+        "competency_groups",
+        "partners",
+        "courses",
+        "trainer_profiles",
+        "occupations",
+        "materials",
+        "users",
+        "training_programs",
+        "organizations",
+        "surveys",
+        "created_by",
+        "updated_by"
+    ],
+    "org-unit-targets": [
+        "organization",
+        "organization_unit",
+        "target",
+        "target_edit_history",
+        "created_by",
+        "updated_by"
+    ],
+    "transaction-subscriptions": [
+        "subscription",
+        "create_by",
+        "created_by",
+        "updated_by"
+    ],
+    "course-reports": [
+        "course",
+        "classes",
+        "images",
+        "created_by_org_member",
+        "created_by",
+        "updated_by"
+    ],
+    "courses": [
+        "competencies",
+        "assessments",
+        "trainer_profiles",
+        "learner_profiles",
+        "partner",
+        "categories",
+        "course_type",
+        "bookings",
+        "conversations",
+        "reports",
+        "classes",
+        "collections",
+        "organization",
+        "training_programs",
+        "wish_list_organizations",
+        "purchase_organizations",
+        "course_reports",
+        "organization_competencies",
+        "created_by_org_member",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-positions": [
+        "organization",
+        "organization_competencies",
+        "organization_members",
+        "organization_position_competencies",
+        "organization_position_categories",
+        "teams",
+        "created_by_org_member",
+        "created_by",
+        "updated_by"
+    ],
+    "behaviors": [
+        "organization_competency",
+        "behavior_scores",
+        "class_learning_objectives",
+        "created_by",
+        "updated_by"
+    ],
+    "form-answers": [
+        "organization_member",
+        "internal_quiz_result",
+        "internal_quiz_question",
+        "internal_quiz_question_options",
+        "internal_quiz_answer_options",
+        "learner_profile",
+        "internal_quiz_answer_feedback",
+        "created_by",
+        "updated_by"
+    ],
+        "training-programs": [
+        "organization",
+        "courses",
+        "classes",
+        "learner_profiles",
+        "occupations",
+        "competencies",
+        "workforce_planning_kpis",
+        "partner",
+        "organization_kpis",
+        "created_by_org_member",
+        "created_by",
+        "updated_by"
+    ],
+    "competency-rating-results": [
+        "organization_competency",
+        "behavior_scores",
+        "survey_result_by_user",
+        "created_by",
+        "updated_by"
+    ],
+        "dynamic-reports": [
+        "organization",
+        "widget_configs",
+        "created_by",
+        "updated_by"
+    ],
+    "targets": [
+        "organization",
+        "org_unit_target",
+        "target_unit",
+        "member_input",
+        "target_items",
+        "input_by",
+        "approved_by",
+        "organization_member_assigned",
+        "created_by",
+        "updated_by"
+    ],
+    "occupations": [
+        "competencies",
+        "users",
+        "training_programs",
+        "created_by",
+        "updated_by"
+    ],
+        "trainer-profiles": [
+        "expertise",
+        "partner",
+        "main_photo",
+        "user",
+        "courses",
+        "classes",
+        "assessment_results",
+        "cover",
+        "conversations",
+        "organization",
+        "materials",
+        "internal_quiz_answer_feedbacks",
+        "internal_quiz_results",
+        "created_by",
+        "updated_by"
+    ],
+    "materials": [
+        "activities",
+        "partner",
+        "competency",
+        "quiz_results",
+        "quiz_result",
+        "organization",
+        "internal_quiz",
+        "trainer_profile",
+        "tracking_materials",
+        "created_by",
+        "updated_by"
+    ],
+        "assessment-results": [
+        "assessment",
+        "learner_profile",
+        "trainer_profile",
+        "created_by",
+        "updated_by"
+    ],
+    "conversations": [
+        "partner",
+        "course",
+        "class",
+        "participants",
+        "order",
+        "chat_message",
+        "trainer_profile",
+        "organization",
+        "created_by",
+        "updated_by"
+    ],
+        "session-materials": [
+        "material",
+        "session",
+        "created_by",
+        "updated_by"
+    ],
+    "survey-result-by-users": [
+        "user",
+        "user_take_survey",
+        "organization_competency",
+        "competency",
+        "survey_result",
+        "competency_rating_results",
+        "auditor_member",
+        "auditee_member",
+        "survey_detail",
+        "created_by",
+        "updated_by"
+    ],
+    "categories": [
+        "image",
+        "courses",
+        "created_by",
+        "updated_by"
+    ],
+    "behavior-scores": [
+        "behavior",
+        "competency_rating_result",
+        "created_by",
+        "updated_by"
+    ],
+        "billings": [
+        "organization",
+        "partner",
+        "user",
+        "created_by",
+        "updated_by"
+    ],
+    "collections": [
+        "image",
+        "courses",
+        "created_by",
+        "updated_by"
+    ],
+    "form-results": [
+        "organization_member",
+        "organization_member_feedback",
+        "organization",
+        "internal_quiz",
+        "internal_quiz_answers",
+        "organization_members",
+        "learner_profile",
+        "trainer_feedback",
+        "created_by",
+        "updated_by"
+    ],
+        "resources": [
+        "partner",
+        "cover",
+        "main_photo",
+        "organization",
+        "created_by",
+        "updated_by"
+    ],
+    "widget-configs": [
+        "dynamic_report",
+        "widget_data",
+        "created_by",
+        "updated_by"
+    ],
+    "form-question-options": [
+        "form_question_answer_key",
+        "internal_quiz_answer",
+        "internal_quiz_question",
+        "internal_quiz_answer_options",
+        "created_by",
+        "updated_by"
+    ],
+    "surveys": [
+        "competencies",
+        "organization_competencies",
+        "teams",
+        "organization",
+        "users",
+        "survey_results",
+        "organization_position",
+        "auditors",
+        "auditor_members",
+        "auditee_members",
+        "auditor_teams",
+        "auditee_teams",
+        "created_by_org_member",
+        "assigned_members",
+        "survey_details",
+        "request_for_changes",
+        "created_by",
+        "updated_by"
+    ],
+    "email-configs": [
+        "email_notifications",
+        "created_by",
+        "updated_by"
+    ],
+    "organization-competencies": [
+        "organization",
+        "organization_positions",
+        "surveys",
+        "courses",
+        "list_behaviors",
+        "competency_rating_results",
+        "organization_position_competencies",
+        "survey_details",
+        "created_by_org_member",
+        "created_by",
+        "updated_by"
+    ]
+}
