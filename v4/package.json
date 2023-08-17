@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
     "lodash": "^4.17.21",
     "strapi-sdk-js": "^2.3.0"
   }

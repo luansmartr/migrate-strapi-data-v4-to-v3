@@ -10,6 +10,7 @@ const axiosClient = axios.create({
         "Authorization": `Bearer ${JWT}`
     }
 })
+//This function will mapping v4 api routes to v3 api routes
 const main = async () => {
     try{
         const response = await axiosClient.get('/users-permissions/routes')
@@ -34,4 +35,4 @@ const main = async () => {
         console.log("🚀 ===== main ===== error:", error);
     }
 }
-main()
+module.exports={remapModel:main}

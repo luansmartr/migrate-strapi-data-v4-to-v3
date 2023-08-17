@@ -10,6 +10,7 @@ const axiosClient = axios.create({
         "Authorization": `Bearer ${JWT}`
     }
 })
+// This function will get all models their relationship from v3
 const main = async () => {
     try{
         const response = await axiosClient.get('/content-manager/content-types')

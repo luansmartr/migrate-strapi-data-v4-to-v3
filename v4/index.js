@@ -55,13 +55,27 @@ const countEntries = async (model)=> {
     return response?.meta?.pagination?.total
 }
 const countPages = async (model)=> {
-    let response = await strapi.find(model, {
-        pagination: {
-            start:0,
-            limit:1
-        }
-    })
-    return Math.ceil(response?.meta?.pagination?.total/PAGE_SIZE)
+    let pages=0
+    if(model==='users'){
+        let response = await strapi.request('get','/users/count')
+        pages=Math.ceil(response/PAGE_SIZE)
+    }else{
+        let response = await strapi.find(model, {
+            pagination: {
+                start:0,
+                limit:1
+            }
+        })
+        pages= Math.ceil(response?.meta?.pagination?.total/PAGE_SIZE)
+    }
+    // let response = await strapi.find('users', {
+    //     pagination: {
+    //         start:0,
+    //         limit:2
+    //     }
+    // })
+    console.log("🚀 ===== countPages ===== response:", pages);
+    return pages
 }
 const crawlApplication = async () => {
     try{
@@ -83,27 +97,33 @@ const crawlApplication = async () => {
                     }
                 }
             },{}):{}
-            const pages = await countPages(v4)
             let fetchedData = []
-            for(let page=1;page<=pages;page++){
-                console.log('======MODEL====  ', v4)
-                console.log("🚀 ===== main ===== page:", page);
-                console.log("🚀 ===== main ===== start:", page-1);
-                console.log("🚀 ===== main ===== total:", (page-1)*BATCH_SIZE);
-                await fs.writeFileSync(`./tracking/${v3}.json`, JSON.stringify({
-                    currentPage: page,
-                    totalPage: pages
-                }))
-                let response = await strapi.find(v4, {
-                    pagination: {
-                        page: page,
-                        pageSize: 100
-                    },
-                    sort: ['id:asc'],
-                    ...(!isEmpty(populate)?{populate:populate}:{})
-                })
-                fetchedData.push(...response.data)
-                response=null
+            if(v4==='users'){
+                fetchedData = await strapi.find('users')
+            }else {
+                const pages = await countPages(v4)
+                console.log("🚀 ===== crawlApplication ===== pages:", pages);
+                for(let page=1;page<=pages;page++){
+                    console.log('======MODEL====  ', v4)
+                    console.log("🚀 ===== main ===== page:", page);
+                    console.log("🚀 ===== main ===== start:", page-1);
+                    console.log("🚀 ===== main ===== total:", (page-1)*BATCH_SIZE);
+                    await fs.writeFileSync(`./tracking/${v3}.json`, JSON.stringify({
+                        currentPage: page,
+                        totalPage: pages
+                    }))
+                    let response = await strapi.find(v4, {
+                        pagination: {
+                            page: page,
+                            pageSize: 100
+                        },
+                        sort: ['id:asc'],
+                        ...(!isEmpty(populate)?{populate:populate}:{})
+                    })
+                    console.log("🚀 ===== crawlApplication ===== response:", response);
+                    fetchedData.push(...response.data)
+                    response=null
+                }
             }
             await fs.writeFileSync(`./data/application/${v3}.json`, JSON.stringify(fetchedData))
             fetchedData=[]
