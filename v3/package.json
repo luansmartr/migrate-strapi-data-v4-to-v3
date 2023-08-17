@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "knex": "^2.5.1",
     "lodash": "^4.17.21",
+    "pg": "^8.11.3",
     "strapi-sdk-js": "^1.1.0"
   },
   "name": "v3",

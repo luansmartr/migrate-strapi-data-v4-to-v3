@@ -1,6 +1,6 @@
 const {getRelationship} = require('./getRelationship-v22')
 const {crawlData} = require("./v4")
-const {migrateCollectionType, migrateRelationship, migrateUserPassword} = require("./v3")
+const {migrateCollectionType, migrateRelationship, migrateUserPassword, migrateFiles} = require("./v3")
 const fs = require('fs')
 const remapModel = require('./remapModel')
 const {formatRelationshipMapping} = require('./formatRelationshipMapping')
@@ -11,12 +11,14 @@ require('dotenv').config()
 
 // remapModel()
 
-// crawlData()
+crawlData()
 
 // migrateCollectionType()
 
 // mappingRelationship()
 
-migrateRelationship()
+// migrateRelationship()
 
 // migrateUserPassword()
+
+// migrateFiles()

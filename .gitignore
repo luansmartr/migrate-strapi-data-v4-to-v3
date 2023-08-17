@@ -1,3 +1,5 @@
 node_modules
 v3/node_modules
+v3/.env
 v4/node_modules
+v4/.env

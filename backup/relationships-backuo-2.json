@@ -1,0 +1,24 @@
+{
+    "trainer-profiles": [
+        "user",
+        "organization"
+    ],
+    "learner-profiles": [
+        "user",
+        "organization"
+    ],
+    "organization-members": [
+        "user",
+        "organization"
+    ],
+    "organizations": [
+        "trainer_profiles",
+        "learner_profiles",
+        "organization_members"
+    ],
+    "users": [
+        "trainer_profiles",
+        "learner_profiles",
+        "organization_members"
+    ]
+}

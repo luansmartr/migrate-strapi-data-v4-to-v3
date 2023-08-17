@@ -1,7 +1,10 @@
 const Strapi = require('strapi-sdk-js')
 const fs = require('fs');
 const { pick, map, omit, isArray, isEmpty } = require('lodash');
-const { default: knex } = require('knex');
+const pluralize=require('pluralize')
+require('dotenv').config()
+const { dbV4, dbV3 } = require('./config/database');
+const { resolveSourceTableName } = require('./helpers/tableNameHelpers');
 const URL='http://localhost:1337'
 const JWT ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyMDk3NTUyLCJleHAiOjE2OTQ2ODk1NTJ9.YipybumzNrTYnp4gROqgFBAQlqNa4RoBz_626xTq2kw" 
 const strapi = new Strapi({
@@ -18,28 +21,28 @@ const strapi = new Strapi({
     }
   },
 });
-const dbV4 = knex({
-    useNullAsDefault: true,
-    client:'pg',
-    connection: {
-      host: '127.0.0.1',
-      port: 5432,
-      user: 'postgres',
-      password: 'luandatabase',
-      database: 'optimize-v2',
-    },
-})
-const dbV3 = knex({
-    useNullAsDefault: true,
-    client:'pg',
-    connection: {
-      host: '127.0.0.1',
-      port: 5432,
-      user: 'postgres',
-      password: 'luandatabase',
-      database: 'migrate_v4-3_2',
-    },
-})
+// const dbV4 = knex({
+//     useNullAsDefault: true,
+//     client:'pg',
+//     connection: {
+//       host: '127.0.0.1',
+//       port: 5432,
+//       user: 'postgres',
+//       password: 'luandatabase',
+//       database: 'optimize-v2',
+//     },
+// })
+// const dbV3 = knex({
+//     useNullAsDefault: true,
+//     client:'pg',
+//     connection: {
+//       host: '127.0.0.1',
+//       port: 5432,
+//       user: 'postgres',
+//       password: 'luandatabase',
+//       database: 'migrate_v4-3_2',
+//     },
+// })
 // let relationship = {
 //     forms: ['internal_quiz_questions'],
 //     'form-questions': ['internal_quiz_question_options']
@@ -181,6 +184,30 @@ const migrateUserPassword = async () => {
         console.log("🚀 ===== migrateUserPassword ===== error:", error);
     }
 }
+
+const processedTables = ['upload_file', 'upload_file_morph'];
+const newTables = ['files', 'files_related_morphs'];
+const migrateFiles = async () => {
+    try{
+        let v4FileMorph = await dbV4('public.files_related_morphs').where('related_type','like','api::%').orWhere('related_type','like','plugin::users-permissionss.user')
+        let fileMorphMap=[]
+        for(let item of v4FileMorph){
+            let collectionType = item?.related_type?.split('.')?.[1]
+            let relationshipMapping = await fs.readFileSync(`./relationshipMapping/${pluralize.plural(collectionType)}.json`,{encoding: 'utf-8'})
+            fileMorphMap.push({
+                id: item?.id,
+                upload_file_id:item?.file_id,
+                related_id: relationshipMapping?.[item?.related_id]?.v3ID,
+                related_type: pluralize.plural(collectionType),
+                field: item?.field,
+                order: item?.order
+            })
+        }
+        console.log("🚀 ===== migrateFiles ===== v4FileMorph:", fileMorphMap);
+    }catch(error){
+        console.log("🚀 ===== migrateFiles ===== error:", error);
+    }
+}
 // migrateCollectionType()
 // migrateRelationship()
-module.exports={migrateCollectionType, migrateRelationship, migrateUserPassword}
+module.exports={migrateCollectionType, migrateRelationship, migrateUserPassword, migrateFiles}
